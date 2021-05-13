@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios'
 import Date from './Date';
 import Title from './Title';
-import Content from './Content';
+import Explanation from './Content';
 
 const Photo = () => {
 
@@ -26,9 +26,7 @@ useEffect(() => {
     <img src = {photo.url} alt = '' />
     <Title title = {photo.title}/>
     <Date date = {photo.date}/>
-    
-    
-    <Content content = {photo.explanation}/> 
+    <Explanation content = {photo.explanation}/> 
     </div>
   )
 } 

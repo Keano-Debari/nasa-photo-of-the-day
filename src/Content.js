@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Content = (props) => {
+const Explanation = (props) => {
 
     return (
     <p> {props.explanation} </p>
@@ -9,4 +9,4 @@ const Content = (props) => {
     
 }
 
-export default Content
+export default Explanation
