@@ -4,6 +4,14 @@ import Date from './Date';
 import Title from './Title';
 import Explanation from './Content';
 
+
+
+const StyledPhoto = styled.div`
+  text-align: center;
+
+  background-color: ${props => props.theme.secondaryColor};
+  color: ${props => props.theme.white};
+`
 const Photo = () => {
 
 const [photo, setPhoto] = useState({});    
@@ -22,12 +30,12 @@ useEffect(() => {
 
   return (
 
-    <div>
+    <StyledPhoto>
     <img src = {photo.url} alt = '' />
     <Title title = {photo.title}/>
     <Date date = {photo.date}/>
     <Explanation content = {photo.explanation}/> 
-    </div>
+    </StyledPhoto>
   )
 } 
 
